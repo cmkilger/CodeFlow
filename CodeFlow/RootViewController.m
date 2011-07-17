@@ -12,7 +12,7 @@
 
 @implementation RootViewController
 		
-@synthesize detailViewController;
+@synthesize detailViewController, folder;
 
 - (void)viewDidLoad
 {
@@ -49,14 +49,12 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
 	return 1;
-			
 }
 
 		
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-	return 0;
-			
+	return 3;
 }
 
 		
@@ -70,7 +68,24 @@
     }
 
 	// Configure the cell.
+	cell.imageView.image = [UIImage imageNamed:@"icn_New_File.m_512.png"];
+	switch (indexPath.row) {
+		case 0:
+			cell.textLabel.text = @"AdjustHSL.m";
+			break;
 			
+		case 1:
+			cell.textLabel.text = @"ImageBlending.m";
+			break;
+			
+		case 2:
+			cell.textLabel.text = @"RGBtoHSL.m";
+			break;
+			
+		default:
+			break;
+	}
+	
     return cell;
 }
 
@@ -107,15 +122,20 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    // Navigation logic may go here -- for example, create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     NSManagedObject *selectedObject = [[self fetchedResultsController] objectAtIndexPath:indexPath];
-     // ...
-     // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+	switch (indexPath.row) {
+		case 0:
+			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"adjusthsl.txt" ofType:nil]];
+			break;
+		case 1:
+			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"RGBtoHSL.txt" ofType:nil]];
+			break;
+		case 2:
+			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"imageblending.txt" ofType:nil]];
+			break;
+			
+		default:
+			break;
+	}
 }
 
 - (void)didReceiveMemoryWarning

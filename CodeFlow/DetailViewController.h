@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate> {
+@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate, UIWebViewDelegate> {
 
+	UILabel *_chooseLabel;
 }
 
 
@@ -18,6 +19,10 @@
 @property (nonatomic, retain) IBOutlet UILabel *detailDescriptionLabel;
 
 @property (nonatomic, retain) IBOutlet UIWebView * webView;
+@property (nonatomic, retain) IBOutlet UIActivityIndicatorView * activityIndicator;
 @property (nonatomic, retain) NSMutableData * data;
+@property (nonatomic, retain) IBOutlet UILabel *chooseLabel;
+
+- (void)setFile:(NSString *)filePath;
 
 @end

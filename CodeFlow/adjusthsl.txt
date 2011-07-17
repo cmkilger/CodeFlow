@@ -1,0 +1,60 @@
+{
+	
+	hue /= 360.0;
+	saturation /= 100.0;
+	lightness /= 100.0;
+	
+	if (hue < 0)
+		hue += 1.0;
+	
+	void * bitmapData = NULL;
+	CGContextRef context = CKBitmapContextAndDataCreateWithImage([self CGImage], &bitmapData);
+	
+	UInt32 * data = bitmapData;
+	
+	size_t width = CGBitmapContextGetWidth(context);
+	size_t height = CGBitmapContextGetHeight(context);
+	
+	for (size_t x = 0; x < width; x++) {
+		for (size_t y = 0; y < height; y++) {
+			NSUInteger index = y*width+x;
+			UInt32 color = data[index];
+			int rInt, gInt, bInt, aInt;
+			UInt32ToRGB(color, &rInt, &gInt, &bInt, &aInt);
+			CGFloat h, s, l;
+			CGFloat r = rInt/255.0, g = gInt/255.0, b = bInt/255.0;
+			RGBToHSL(r, g, b, &h, &s, &l);
+			
+			h = h+hue;
+			if (h > 1.0)
+				h -= 1.0;
+			
+			if (saturation < 0)
+				s = s*(1.0+saturation);
+			else if (saturation > 0)
+				s = (1.0-s)*saturation+s;
+			
+			if (lightness < 0)
+				l = l*(1.0+lightness);
+			else if (lightness > 0)
+				l = (1.0-l)*lightness+l;
+			
+			HSLToRGB(h, s, l, &r, &g, &b);
+			color = RGBToUInt32(r*255, g*255, b*255, aInt);
+			data[index] = color;
+		}
+	}
+	
+	CGImageRef newImage = CGBitmapContextCreateImage(context);
+	UIImage * image = nil;
+	if ([[UIImage class] respondsToSelector:@selector(imageWithCGImage:scale:orientation:)])
+		image = [UIImage imageWithCGImage:newImage scale:[self scale] orientation:UIImageOrientationUp];
+	else
+		image = [UIImage imageWithCGImage:newImage];
+	
+	CGImageRelease(newImage);
+	CGContextRelease(context);
+	free(bitmapData);
+	
+	return image;
+}

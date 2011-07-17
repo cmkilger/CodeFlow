@@ -10,6 +10,7 @@
 #import "RootViewController.h"
 #import "NSData+Gzip.h"
 #import "NSData+Base64.h"
+#import "WNStatement.h"
 
 @interface DetailViewController ()
 @property (nonatomic, retain) UIPopoverController *popoverController;
@@ -17,13 +18,14 @@
 @end
 
 @implementation DetailViewController
+@synthesize chooseLabel = _chooseLabel;
 
 @synthesize toolbar=_toolbar;
 @synthesize detailItem=_detailItem;
 @synthesize detailDescriptionLabel=_detailDescriptionLabel;
 @synthesize popoverController=_myPopoverController;
 
-@synthesize webView;
+@synthesize webView, activityIndicator;
 @synthesize data;
 
 #pragma mark - Managing the detail item
@@ -99,23 +101,43 @@
     self.popoverController = nil;
 }
 
- // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+- (void)setFile:(NSString *)filePath {
 	
-	NSString * requestBodyString = @"H4sICHlQeU0AA0F2YW50R2FyZGUuZ3YA3ZJJT4NAGIbPzK+YcLYpXW7CJGxiFUul"
-									"uOthkCkzFgZKp4ua/vdCTRON2uiJhMub+db3y5OJWFzgnL4DqQNbCHYr6VXSPwZl"
-									"7gFOMi44Tokm60vMhYOLiLSMLJvKcE5xTrQwW8MViwTVFEgJi6koHykuYsY1WTlS"
-									"ZCAlOCSJpqqBbrg2NDzfsv2yJkPTdt192PkIxyPdHAydqoyApAY+UgMLfTNX22W2"
-									"FP9Lk2Fa9olzOjhzz92LoTe69MfB1fXN7d39zwM4fI7IJKbsJZkmKc/yWTEXi+Vq"
-									"/fr2b4dH/udt7R0IhJ4qxt0DjL0wYbMFqRX1/obmEO/9QtwiKasN9c68OYz7BxjX"
-									"/as/39AY4mADtoCCMYvMBQAA";
+	self.chooseLabel.hidden = YES;
+	self.webView.alpha = 0.0;
+	[self.activityIndicator startAnimating];
 	
+	// Cheatery for demo
+//	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]]];
+//	return;
+	
+	NSString * input = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
+    WNStatement * statement = [WNStatement statementWithString:input];
+    input = [statement graph];
+	NSData * content = [input dataUsingEncoding:NSUTF8StringEncoding];
+	content = [content gzipDeflate];
+	NSString * requestBodyString = [content base64EncodedString];
+	NSLog(@"%@", requestBodyString);
 	NSMutableURLRequest * request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:@"http://Gideon.local/cgi-bin/graphviz-cgi"]];
 	[request setHTTPMethod:@"POST"];
 	[request setHTTPBody:[requestBodyString dataUsingEncoding:NSUTF8StringEncoding]];
 	[NSURLConnection connectionWithRequest:request delegate:self];
+}
+
+- (void)webViewDidFinishLoad:(UIWebView *)webView {
+	[UIView animateWithDuration:0.15 animations:^(void) {
+		self.webView.alpha = 1.0;
+	}];
+	[self.activityIndicator stopAnimating];
+}
+
+- (void)webView:(UIWebView *)webView didFailLoadWithError:(NSError *)error {
+	[[[[UIAlertView alloc] initWithTitle:@"ERROR" message:@"There was an error loading the flowchart." delegate:nil cancelButtonTitle:@"Sheesh." otherButtonTitles:nil] autorelease] show];
+}
+
+ // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+    [super viewDidLoad];
 }
 
 NSString * DocumentsFolder() {
@@ -135,6 +157,7 @@ NSString * DocumentsFolder() {
 	
 	if ([string isEqualToString:@"ERROR"]) {
 		[string release];
+		[self.activityIndicator stopAnimating];
 		[[[[UIAlertView alloc] initWithTitle:@"ERROR" message:@"There was an error generating the flowchart." delegate:nil cancelButtonTitle:@"Bummer." otherButtonTitles:nil] autorelease] show];
 		return;
 	}
@@ -144,15 +167,16 @@ NSString * DocumentsFolder() {
 	NSString * filePath = [DocumentsFolder() stringByAppendingPathComponent:@"flowchart.pdf"];
 	[content writeToFile:filePath atomically:YES];
 	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]]];
-	self.webView.alpha = 1.0;
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+	[self.activityIndicator stopAnimating];
 	[[[[UIAlertView alloc] initWithTitle:@"Network error" message:[error localizedDescription] delegate:nil cancelButtonTitle:@"Ah, man." otherButtonTitles:nil] autorelease] show];
 }
 
 - (void)viewDidUnload
 {
+	[self setChooseLabel:nil];
 	[super viewDidUnload];
 
 	// Release any retained subviews of the main view.
@@ -176,6 +200,7 @@ NSString * DocumentsFolder() {
 	[_toolbar release];
 	[_detailItem release];
 	[_detailDescriptionLabel release];
+	[_chooseLabel release];
     [super dealloc];
 }
 

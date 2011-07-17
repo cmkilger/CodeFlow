@@ -16,5 +16,6 @@
 
 		
 @property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
+@property (nonatomic, retain) NSString * folder;
 
 @end

@@ -7,6 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9A160E9513D37EB4001803DE /* folder64.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A160E9413D37EB4001803DE /* folder64.png */; };
+		9A160E9913D3806C001803DE /* adjusthsl.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9A160E9613D3806C001803DE /* adjusthsl.txt */; };
+		9A160E9A13D3806C001803DE /* RGBtoHSL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9A160E9713D3806C001803DE /* RGBtoHSL.txt */; };
+		9A160E9B13D3806C001803DE /* imageblending.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9A160E9813D3806C001803DE /* imageblending.txt */; };
+		9A160E9D13D38159001803DE /* icn_New_File.m_512.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A160E9C13D38159001803DE /* icn_New_File.m_512.png */; };
+		9A160EBF13D38233001803DE /* WNStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EAA13D38233001803DE /* WNStatement.m */; };
+		9A160EC013D38233001803DE /* WNCodeBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EAC13D38233001803DE /* WNCodeBlock.m */; };
+		9A160EC113D38233001803DE /* WNConditionalChain.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EAE13D38233001803DE /* WNConditionalChain.m */; };
+		9A160EC213D38233001803DE /* WNConditional.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EB013D38233001803DE /* WNConditional.m */; };
+		9A160EC313D38233001803DE /* WNBooleanExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EB213D38233001803DE /* WNBooleanExpression.m */; };
+		9A160EC413D38233001803DE /* WNWhileLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EB413D38233001803DE /* WNWhileLoop.m */; };
+		9A160EC513D38233001803DE /* WNForLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EB613D38233001803DE /* WNForLoop.m */; };
+		9A160EC613D38233001803DE /* WNFastEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EB813D38233001803DE /* WNFastEnumeration.m */; };
+		9A160EC713D38233001803DE /* WNReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EBA13D38233001803DE /* WNReturn.m */; };
+		9A160EC813D38233001803DE /* WNComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EBC13D38233001803DE /* WNComment.m */; };
+		9A160EC913D38233001803DE /* WNBreak.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EBE13D38233001803DE /* WNBreak.m */; };
+		9A160ECC13D38313001803DE /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160ECB13D38313001803DE /* RegexKitLite.m */; };
+		9A160ECE13D3837C001803DE /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A160ECD13D3837C001803DE /* libicucore.dylib */; };
+		9A3AC60F13D389A700D50E31 /* RGBtoHSL.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9A3AC60C13D389A600D50E31 /* RGBtoHSL.pdf */; };
+		9A3AC61013D389A700D50E31 /* imageblending.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9A3AC60D13D389A600D50E31 /* imageblending.pdf */; };
+		9A3AC61113D389A700D50E31 /* adjusthsl.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 9A3AC60E13D389A700D50E31 /* adjusthsl.pdf */; };
+		9A3AC61613D38A6500D50E31 /* adjusthsl.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3AC61313D38A6500D50E31 /* adjusthsl.png */; };
+		9A3AC61713D38A6500D50E31 /* imageblending.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3AC61413D38A6500D50E31 /* imageblending.png */; };
+		9A3AC61813D38A6500D50E31 /* RGBtoHSL.png in Resources */ = {isa = PBXBuildFile; fileRef = 9A3AC61513D38A6500D50E31 /* RGBtoHSL.png */; };
 		9A9B804B13D2E33700A0EB37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804A13D2E33700A0EB37 /* UIKit.framework */; };
 		9A9B804D13D2E33700A0EB37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804C13D2E33700A0EB37 /* Foundation.framework */; };
 		9A9B804F13D2E33700A0EB37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804E13D2E33700A0EB37 /* CoreGraphics.framework */; };
@@ -39,6 +63,42 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9A160E9413D37EB4001803DE /* folder64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder64.png; sourceTree = "<group>"; };
+		9A160E9613D3806C001803DE /* adjusthsl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adjusthsl.txt; sourceTree = "<group>"; };
+		9A160E9713D3806C001803DE /* RGBtoHSL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RGBtoHSL.txt; sourceTree = "<group>"; };
+		9A160E9813D3806C001803DE /* imageblending.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = imageblending.txt; sourceTree = "<group>"; };
+		9A160E9C13D38159001803DE /* icn_New_File.m_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_New_File.m_512.png; sourceTree = "<group>"; };
+		9A160EA913D38233001803DE /* WNStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNStatement.h; sourceTree = "<group>"; };
+		9A160EAA13D38233001803DE /* WNStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNStatement.m; sourceTree = "<group>"; };
+		9A160EAB13D38233001803DE /* WNCodeBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNCodeBlock.h; sourceTree = "<group>"; };
+		9A160EAC13D38233001803DE /* WNCodeBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNCodeBlock.m; sourceTree = "<group>"; };
+		9A160EAD13D38233001803DE /* WNConditionalChain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNConditionalChain.h; sourceTree = "<group>"; };
+		9A160EAE13D38233001803DE /* WNConditionalChain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNConditionalChain.m; sourceTree = "<group>"; };
+		9A160EAF13D38233001803DE /* WNConditional.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNConditional.h; sourceTree = "<group>"; };
+		9A160EB013D38233001803DE /* WNConditional.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNConditional.m; sourceTree = "<group>"; };
+		9A160EB113D38233001803DE /* WNBooleanExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNBooleanExpression.h; sourceTree = "<group>"; };
+		9A160EB213D38233001803DE /* WNBooleanExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNBooleanExpression.m; sourceTree = "<group>"; };
+		9A160EB313D38233001803DE /* WNWhileLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNWhileLoop.h; sourceTree = "<group>"; };
+		9A160EB413D38233001803DE /* WNWhileLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNWhileLoop.m; sourceTree = "<group>"; };
+		9A160EB513D38233001803DE /* WNForLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNForLoop.h; sourceTree = "<group>"; };
+		9A160EB613D38233001803DE /* WNForLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNForLoop.m; sourceTree = "<group>"; };
+		9A160EB713D38233001803DE /* WNFastEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNFastEnumeration.h; sourceTree = "<group>"; };
+		9A160EB813D38233001803DE /* WNFastEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNFastEnumeration.m; sourceTree = "<group>"; };
+		9A160EB913D38233001803DE /* WNReturn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNReturn.h; sourceTree = "<group>"; };
+		9A160EBA13D38233001803DE /* WNReturn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNReturn.m; sourceTree = "<group>"; };
+		9A160EBB13D38233001803DE /* WNComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNComment.h; sourceTree = "<group>"; };
+		9A160EBC13D38233001803DE /* WNComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNComment.m; sourceTree = "<group>"; };
+		9A160EBD13D38233001803DE /* WNBreak.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNBreak.h; sourceTree = "<group>"; };
+		9A160EBE13D38233001803DE /* WNBreak.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNBreak.m; sourceTree = "<group>"; };
+		9A160ECA13D38313001803DE /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
+		9A160ECB13D38313001803DE /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
+		9A160ECD13D3837C001803DE /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		9A3AC60C13D389A600D50E31 /* RGBtoHSL.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = RGBtoHSL.pdf; sourceTree = "<group>"; };
+		9A3AC60D13D389A600D50E31 /* imageblending.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = imageblending.pdf; sourceTree = "<group>"; };
+		9A3AC60E13D389A700D50E31 /* adjusthsl.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = adjusthsl.pdf; sourceTree = "<group>"; };
+		9A3AC61313D38A6500D50E31 /* adjusthsl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adjusthsl.png; sourceTree = "<group>"; };
+		9A3AC61413D38A6500D50E31 /* imageblending.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = imageblending.png; sourceTree = "<group>"; };
+		9A3AC61513D38A6500D50E31 /* RGBtoHSL.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = RGBtoHSL.png; sourceTree = "<group>"; };
 		9A9B804613D2E33700A0EB37 /* CodeFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9B804A13D2E33700A0EB37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A9B804C13D2E33700A0EB37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +133,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A160ECE13D3837C001803DE /* libicucore.dylib in Frameworks */,
 				9A9B80D013D3680C00A0EB37 /* libz.dylib in Frameworks */,
 				9A9B804B13D2E33700A0EB37 /* UIKit.framework in Frameworks */,
 				9A9B804D13D2E33700A0EB37 /* Foundation.framework in Frameworks */,
@@ -93,6 +154,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9A160EA813D38217001803DE /* Dumb Parser */ = {
+			isa = PBXGroup;
+			children = (
+				9A160EA913D38233001803DE /* WNStatement.h */,
+				9A160EAA13D38233001803DE /* WNStatement.m */,
+				9A160EAB13D38233001803DE /* WNCodeBlock.h */,
+				9A160EAC13D38233001803DE /* WNCodeBlock.m */,
+				9A160EAD13D38233001803DE /* WNConditionalChain.h */,
+				9A160EAE13D38233001803DE /* WNConditionalChain.m */,
+				9A160EAF13D38233001803DE /* WNConditional.h */,
+				9A160EB013D38233001803DE /* WNConditional.m */,
+				9A160EB113D38233001803DE /* WNBooleanExpression.h */,
+				9A160EB213D38233001803DE /* WNBooleanExpression.m */,
+				9A160EB313D38233001803DE /* WNWhileLoop.h */,
+				9A160EB413D38233001803DE /* WNWhileLoop.m */,
+				9A160EB513D38233001803DE /* WNForLoop.h */,
+				9A160EB613D38233001803DE /* WNForLoop.m */,
+				9A160EB713D38233001803DE /* WNFastEnumeration.h */,
+				9A160EB813D38233001803DE /* WNFastEnumeration.m */,
+				9A160EB913D38233001803DE /* WNReturn.h */,
+				9A160EBA13D38233001803DE /* WNReturn.m */,
+				9A160EBB13D38233001803DE /* WNComment.h */,
+				9A160EBC13D38233001803DE /* WNComment.m */,
+				9A160EBD13D38233001803DE /* WNBreak.h */,
+				9A160EBE13D38233001803DE /* WNBreak.m */,
+			);
+			name = "Dumb Parser";
+			sourceTree = "<group>";
+		};
 		9A9B803B13D2E33700A0EB37 = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +205,7 @@
 		9A9B804913D2E33700A0EB37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A160ECD13D3837C001803DE /* libicucore.dylib */,
 				9A9B80CF13D3680C00A0EB37 /* libz.dylib */,
 				9A9B804A13D2E33700A0EB37 /* UIKit.framework */,
 				9A9B804C13D2E33700A0EB37 /* Foundation.framework */,
@@ -139,6 +230,20 @@
 				9A9B808B13D2E4BC00A0EB37 /* NSData+Gzip.h */,
 				9A9B808C13D2E4BC00A0EB37 /* NSData+Gzip.m */,
 				9A9B805113D2E33700A0EB37 /* Supporting Files */,
+				9A160EA813D38217001803DE /* Dumb Parser */,
+				9A160E9413D37EB4001803DE /* folder64.png */,
+				9A160E9613D3806C001803DE /* adjusthsl.txt */,
+				9A160E9713D3806C001803DE /* RGBtoHSL.txt */,
+				9A160E9813D3806C001803DE /* imageblending.txt */,
+				9A3AC60C13D389A600D50E31 /* RGBtoHSL.pdf */,
+				9A3AC60D13D389A600D50E31 /* imageblending.pdf */,
+				9A3AC60E13D389A700D50E31 /* adjusthsl.pdf */,
+				9A3AC61313D38A6500D50E31 /* adjusthsl.png */,
+				9A3AC61413D38A6500D50E31 /* imageblending.png */,
+				9A3AC61513D38A6500D50E31 /* RGBtoHSL.png */,
+				9A160E9C13D38159001803DE /* icn_New_File.m_512.png */,
+				9A160ECA13D38313001803DE /* RegexKitLite.h */,
+				9A160ECB13D38313001803DE /* RegexKitLite.m */,
 			);
 			path = CodeFlow;
 			sourceTree = "<group>";
@@ -247,6 +352,17 @@
 				9A9B805513D2E33700A0EB37 /* InfoPlist.strings in Resources */,
 				9A9B805E13D2E33700A0EB37 /* MainWindow.xib in Resources */,
 				9A9B806413D2E33700A0EB37 /* DetailView.xib in Resources */,
+				9A160E9513D37EB4001803DE /* folder64.png in Resources */,
+				9A160E9913D3806C001803DE /* adjusthsl.txt in Resources */,
+				9A160E9A13D3806C001803DE /* RGBtoHSL.txt in Resources */,
+				9A160E9B13D3806C001803DE /* imageblending.txt in Resources */,
+				9A160E9D13D38159001803DE /* icn_New_File.m_512.png in Resources */,
+				9A3AC60F13D389A700D50E31 /* RGBtoHSL.pdf in Resources */,
+				9A3AC61013D389A700D50E31 /* imageblending.pdf in Resources */,
+				9A3AC61113D389A700D50E31 /* adjusthsl.pdf in Resources */,
+				9A3AC61613D38A6500D50E31 /* adjusthsl.png in Resources */,
+				9A3AC61713D38A6500D50E31 /* imageblending.png in Resources */,
+				9A3AC61813D38A6500D50E31 /* RGBtoHSL.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +404,18 @@
 				9A9B806713D2E33700A0EB37 /* RootViewController.m in Sources */,
 				9A9B808D13D2E4BC00A0EB37 /* NSData+Base64.m in Sources */,
 				9A9B808E13D2E4BC00A0EB37 /* NSData+Gzip.m in Sources */,
+				9A160EBF13D38233001803DE /* WNStatement.m in Sources */,
+				9A160EC013D38233001803DE /* WNCodeBlock.m in Sources */,
+				9A160EC113D38233001803DE /* WNConditionalChain.m in Sources */,
+				9A160EC213D38233001803DE /* WNConditional.m in Sources */,
+				9A160EC313D38233001803DE /* WNBooleanExpression.m in Sources */,
+				9A160EC413D38233001803DE /* WNWhileLoop.m in Sources */,
+				9A160EC513D38233001803DE /* WNForLoop.m in Sources */,
+				9A160EC613D38233001803DE /* WNFastEnumeration.m in Sources */,
+				9A160EC713D38233001803DE /* WNReturn.m in Sources */,
+				9A160EC813D38233001803DE /* WNComment.m in Sources */,
+				9A160EC913D38233001803DE /* WNBreak.m in Sources */,
+				9A160ECC13D38313001803DE /* RegexKitLite.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -472,6 +600,7 @@
 				9A9B808213D2E33800A0EB37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9A9B808313D2E33800A0EB37 /* Build configuration list for PBXNativeTarget "CodeFlowTests" */ = {
 			isa = XCConfigurationList;
@@ -480,6 +609,7 @@
 				9A9B808513D2E33800A0EB37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

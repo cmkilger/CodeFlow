@@ -1,0 +1,25 @@
+{
+	float mincolor = fminf(fminf(r, g), b);
+	float maxcolor = fmaxf(fmaxf(r, g), b);
+	
+	*h = 0;
+	*s = 0;
+	*l = (maxcolor + mincolor)/2;
+	
+	if (maxcolor == mincolor)
+		return;
+	
+	if (*l < 0.5)
+		*s = (maxcolor - mincolor)/(maxcolor + mincolor);
+	else
+		*s = (maxcolor - mincolor)/(2.0 - maxcolor - mincolor);
+	
+	if (r == maxcolor)
+		*h = (g - b)/(maxcolor - mincolor);
+	else if (g == maxcolor)
+		*h = 2.0 + (b - r)/(maxcolor - mincolor);
+	else
+		*h = 4.0 + (r - g)/(maxcolor - mincolor);
+	
+	*h /= 6;
+}
