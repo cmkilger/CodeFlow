@@ -23,6 +23,9 @@
 		9A9B807813D2E33700A0EB37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B807613D2E33700A0EB37 /* InfoPlist.strings */; };
 		9A9B807B13D2E33800A0EB37 /* CodeFlowTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B807A13D2E33800A0EB37 /* CodeFlowTests.h */; };
 		9A9B807D13D2E33800A0EB37 /* CodeFlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B807C13D2E33800A0EB37 /* CodeFlowTests.m */; };
+		9A9B808D13D2E4BC00A0EB37 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B808A13D2E4BC00A0EB37 /* NSData+Base64.m */; };
+		9A9B808E13D2E4BC00A0EB37 /* NSData+Gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B808C13D2E4BC00A0EB37 /* NSData+Gzip.m */; };
+		9A9B80D013D3680C00A0EB37 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B80CF13D3680C00A0EB37 /* libz.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,24 +43,29 @@
 		9A9B804A13D2E33700A0EB37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A9B804C13D2E33700A0EB37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9A9B804E13D2E33700A0EB37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		9A9B805213D2E33700A0EB37 /* CodeFlow-Info.plist */ = {isa = PBXFileReference; path = "CodeFlow-Info.plist"; sourceTree = "<group>"; };
+		9A9B805213D2E33700A0EB37 /* CodeFlow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodeFlow-Info.plist"; sourceTree = "<group>"; };
 		9A9B805413D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9A9B805613D2E33700A0EB37 /* CodeFlow-Prefix.pch */ = {isa = PBXFileReference; path = "CodeFlow-Prefix.pch"; sourceTree = "<group>"; };
+		9A9B805613D2E33700A0EB37 /* CodeFlow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeFlow-Prefix.pch"; sourceTree = "<group>"; };
 		9A9B805713D2E33700A0EB37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9A9B805913D2E33700A0EB37 /* CodeFlowAppDelegate.h */ = {isa = PBXFileReference; path = CodeFlowAppDelegate.h; sourceTree = "<group>"; };
+		9A9B805913D2E33700A0EB37 /* CodeFlowAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeFlowAppDelegate.h; sourceTree = "<group>"; };
 		9A9B805A13D2E33700A0EB37 /* CodeFlowAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeFlowAppDelegate.m; sourceTree = "<group>"; };
 		9A9B805D13D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		9A9B805F13D2E33700A0EB37 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		9A9B805F13D2E33700A0EB37 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		9A9B806013D2E33700A0EB37 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		9A9B806313D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
-		9A9B806513D2E33700A0EB37 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		9A9B806513D2E33700A0EB37 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
 		9A9B806613D2E33700A0EB37 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
 		9A9B806D13D2E33700A0EB37 /* CodeFlowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeFlowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9A9B807513D2E33700A0EB37 /* CodeFlowTests-Info.plist */ = {isa = PBXFileReference; path = "CodeFlowTests-Info.plist"; sourceTree = "<group>"; };
+		9A9B807513D2E33700A0EB37 /* CodeFlowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodeFlowTests-Info.plist"; sourceTree = "<group>"; };
 		9A9B807713D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		9A9B807913D2E33800A0EB37 /* CodeFlowTests-Prefix.pch */ = {isa = PBXFileReference; path = "CodeFlowTests-Prefix.pch"; sourceTree = "<group>"; };
+		9A9B807913D2E33800A0EB37 /* CodeFlowTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeFlowTests-Prefix.pch"; sourceTree = "<group>"; };
 		9A9B807A13D2E33800A0EB37 /* CodeFlowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeFlowTests.h; sourceTree = "<group>"; };
 		9A9B807C13D2E33800A0EB37 /* CodeFlowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeFlowTests.m; sourceTree = "<group>"; };
+		9A9B808913D2E4BC00A0EB37 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		9A9B808A13D2E4BC00A0EB37 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		9A9B808B13D2E4BC00A0EB37 /* NSData+Gzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Gzip.h"; sourceTree = "<group>"; };
+		9A9B808C13D2E4BC00A0EB37 /* NSData+Gzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Gzip.m"; sourceTree = "<group>"; };
+		9A9B80CF13D3680C00A0EB37 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9A9B80D013D3680C00A0EB37 /* libz.dylib in Frameworks */,
 				9A9B804B13D2E33700A0EB37 /* UIKit.framework in Frameworks */,
 				9A9B804D13D2E33700A0EB37 /* Foundation.framework in Frameworks */,
 				9A9B804F13D2E33700A0EB37 /* CoreGraphics.framework in Frameworks */,
@@ -106,6 +115,7 @@
 		9A9B804913D2E33700A0EB37 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9A9B80CF13D3680C00A0EB37 /* libz.dylib */,
 				9A9B804A13D2E33700A0EB37 /* UIKit.framework */,
 				9A9B804C13D2E33700A0EB37 /* Foundation.framework */,
 				9A9B804E13D2E33700A0EB37 /* CoreGraphics.framework */,
@@ -124,6 +134,10 @@
 				9A9B806213D2E33700A0EB37 /* DetailView.xib */,
 				9A9B806513D2E33700A0EB37 /* RootViewController.h */,
 				9A9B806613D2E33700A0EB37 /* RootViewController.m */,
+				9A9B808913D2E4BC00A0EB37 /* NSData+Base64.h */,
+				9A9B808A13D2E4BC00A0EB37 /* NSData+Base64.m */,
+				9A9B808B13D2E4BC00A0EB37 /* NSData+Gzip.h */,
+				9A9B808C13D2E4BC00A0EB37 /* NSData+Gzip.m */,
 				9A9B805113D2E33700A0EB37 /* Supporting Files */,
 			);
 			path = CodeFlow;
@@ -272,6 +286,8 @@
 				9A9B805B13D2E33700A0EB37 /* CodeFlowAppDelegate.m in Sources */,
 				9A9B806113D2E33700A0EB37 /* DetailViewController.m in Sources */,
 				9A9B806713D2E33700A0EB37 /* RootViewController.m in Sources */,
+				9A9B808D13D2E4BC00A0EB37 /* NSData+Base64.m in Sources */,
+				9A9B808E13D2E4BC00A0EB37 /* NSData+Gzip.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
