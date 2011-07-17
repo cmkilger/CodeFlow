@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A9B804B13D2E33700A0EB37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804A13D2E33700A0EB37 /* UIKit.framework */; };
+		9A9B804D13D2E33700A0EB37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804C13D2E33700A0EB37 /* Foundation.framework */; };
+		9A9B804F13D2E33700A0EB37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804E13D2E33700A0EB37 /* CoreGraphics.framework */; };
+		9A9B805513D2E33700A0EB37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B805313D2E33700A0EB37 /* InfoPlist.strings */; };
+		9A9B805813D2E33700A0EB37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B805713D2E33700A0EB37 /* main.m */; };
+		9A9B805B13D2E33700A0EB37 /* CodeFlowAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B805A13D2E33700A0EB37 /* CodeFlowAppDelegate.m */; };
+		9A9B805E13D2E33700A0EB37 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B805C13D2E33700A0EB37 /* MainWindow.xib */; };
+		9A9B806113D2E33700A0EB37 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B806013D2E33700A0EB37 /* DetailViewController.m */; };
+		9A9B806413D2E33700A0EB37 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B806213D2E33700A0EB37 /* DetailView.xib */; };
+		9A9B806713D2E33700A0EB37 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B806613D2E33700A0EB37 /* RootViewController.m */; };
+		9A9B806E13D2E33700A0EB37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804A13D2E33700A0EB37 /* UIKit.framework */; };
+		9A9B806F13D2E33700A0EB37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804C13D2E33700A0EB37 /* Foundation.framework */; };
+		9A9B807013D2E33700A0EB37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804E13D2E33700A0EB37 /* CoreGraphics.framework */; };
+		9A9B807813D2E33700A0EB37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B807613D2E33700A0EB37 /* InfoPlist.strings */; };
+		9A9B807B13D2E33800A0EB37 /* CodeFlowTests.h in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B807A13D2E33800A0EB37 /* CodeFlowTests.h */; };
+		9A9B807D13D2E33800A0EB37 /* CodeFlowTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B807C13D2E33800A0EB37 /* CodeFlowTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9A9B807113D2E33700A0EB37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9A9B803D13D2E33700A0EB37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9A9B804513D2E33700A0EB37;
+			remoteInfo = CodeFlow;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9A9B804613D2E33700A0EB37 /* CodeFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9B804A13D2E33700A0EB37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		9A9B804C13D2E33700A0EB37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9A9B804E13D2E33700A0EB37 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9A9B805213D2E33700A0EB37 /* CodeFlow-Info.plist */ = {isa = PBXFileReference; path = "CodeFlow-Info.plist"; sourceTree = "<group>"; };
+		9A9B805413D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A9B805613D2E33700A0EB37 /* CodeFlow-Prefix.pch */ = {isa = PBXFileReference; path = "CodeFlow-Prefix.pch"; sourceTree = "<group>"; };
+		9A9B805713D2E33700A0EB37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A9B805913D2E33700A0EB37 /* CodeFlowAppDelegate.h */ = {isa = PBXFileReference; path = CodeFlowAppDelegate.h; sourceTree = "<group>"; };
+		9A9B805A13D2E33700A0EB37 /* CodeFlowAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeFlowAppDelegate.m; sourceTree = "<group>"; };
+		9A9B805D13D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		9A9B805F13D2E33700A0EB37 /* DetailViewController.h */ = {isa = PBXFileReference; path = DetailViewController.h; sourceTree = "<group>"; };
+		9A9B806013D2E33700A0EB37 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		9A9B806313D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
+		9A9B806513D2E33700A0EB37 /* RootViewController.h */ = {isa = PBXFileReference; path = RootViewController.h; sourceTree = "<group>"; };
+		9A9B806613D2E33700A0EB37 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9A9B806D13D2E33700A0EB37 /* CodeFlowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeFlowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9B807513D2E33700A0EB37 /* CodeFlowTests-Info.plist */ = {isa = PBXFileReference; path = "CodeFlowTests-Info.plist"; sourceTree = "<group>"; };
+		9A9B807713D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9A9B807913D2E33800A0EB37 /* CodeFlowTests-Prefix.pch */ = {isa = PBXFileReference; path = "CodeFlowTests-Prefix.pch"; sourceTree = "<group>"; };
+		9A9B807A13D2E33800A0EB37 /* CodeFlowTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeFlowTests.h; sourceTree = "<group>"; };
+		9A9B807C13D2E33800A0EB37 /* CodeFlowTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeFlowTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A9B804313D2E33700A0EB37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B804B13D2E33700A0EB37 /* UIKit.framework in Frameworks */,
+				9A9B804D13D2E33700A0EB37 /* Foundation.framework in Frameworks */,
+				9A9B804F13D2E33700A0EB37 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B806913D2E33700A0EB37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B806E13D2E33700A0EB37 /* UIKit.framework in Frameworks */,
+				9A9B806F13D2E33700A0EB37 /* Foundation.framework in Frameworks */,
+				9A9B807013D2E33700A0EB37 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A9B803B13D2E33700A0EB37 = {
+			isa = PBXGroup;
+			children = (
+				9A9B805013D2E33700A0EB37 /* CodeFlow */,
+				9A9B807313D2E33700A0EB37 /* CodeFlowTests */,
+				9A9B804913D2E33700A0EB37 /* Frameworks */,
+				9A9B804713D2E33700A0EB37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A9B804713D2E33700A0EB37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B804613D2E33700A0EB37 /* CodeFlow.app */,
+				9A9B806D13D2E33700A0EB37 /* CodeFlowTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A9B804913D2E33700A0EB37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B804A13D2E33700A0EB37 /* UIKit.framework */,
+				9A9B804C13D2E33700A0EB37 /* Foundation.framework */,
+				9A9B804E13D2E33700A0EB37 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A9B805013D2E33700A0EB37 /* CodeFlow */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B805913D2E33700A0EB37 /* CodeFlowAppDelegate.h */,
+				9A9B805A13D2E33700A0EB37 /* CodeFlowAppDelegate.m */,
+				9A9B805C13D2E33700A0EB37 /* MainWindow.xib */,
+				9A9B805F13D2E33700A0EB37 /* DetailViewController.h */,
+				9A9B806013D2E33700A0EB37 /* DetailViewController.m */,
+				9A9B806213D2E33700A0EB37 /* DetailView.xib */,
+				9A9B806513D2E33700A0EB37 /* RootViewController.h */,
+				9A9B806613D2E33700A0EB37 /* RootViewController.m */,
+				9A9B805113D2E33700A0EB37 /* Supporting Files */,
+			);
+			path = CodeFlow;
+			sourceTree = "<group>";
+		};
+		9A9B805113D2E33700A0EB37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B805213D2E33700A0EB37 /* CodeFlow-Info.plist */,
+				9A9B805313D2E33700A0EB37 /* InfoPlist.strings */,
+				9A9B805613D2E33700A0EB37 /* CodeFlow-Prefix.pch */,
+				9A9B805713D2E33700A0EB37 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9A9B807313D2E33700A0EB37 /* CodeFlowTests */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B807A13D2E33800A0EB37 /* CodeFlowTests.h */,
+				9A9B807C13D2E33800A0EB37 /* CodeFlowTests.m */,
+				9A9B807413D2E33700A0EB37 /* Supporting Files */,
+			);
+			path = CodeFlowTests;
+			sourceTree = "<group>";
+		};
+		9A9B807413D2E33700A0EB37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B807513D2E33700A0EB37 /* CodeFlowTests-Info.plist */,
+				9A9B807613D2E33700A0EB37 /* InfoPlist.strings */,
+				9A9B807913D2E33800A0EB37 /* CodeFlowTests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A9B804513D2E33700A0EB37 /* CodeFlow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A9B808013D2E33800A0EB37 /* Build configuration list for PBXNativeTarget "CodeFlow" */;
+			buildPhases = (
+				9A9B804213D2E33700A0EB37 /* Sources */,
+				9A9B804313D2E33700A0EB37 /* Frameworks */,
+				9A9B804413D2E33700A0EB37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CodeFlow;
+			productName = CodeFlow;
+			productReference = 9A9B804613D2E33700A0EB37 /* CodeFlow.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9A9B806C13D2E33700A0EB37 /* CodeFlowTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A9B808313D2E33800A0EB37 /* Build configuration list for PBXNativeTarget "CodeFlowTests" */;
+			buildPhases = (
+				9A9B806813D2E33700A0EB37 /* Sources */,
+				9A9B806913D2E33700A0EB37 /* Frameworks */,
+				9A9B806A13D2E33700A0EB37 /* Resources */,
+				9A9B806B13D2E33700A0EB37 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A9B807213D2E33700A0EB37 /* PBXTargetDependency */,
+			);
+			name = CodeFlowTests;
+			productName = CodeFlowTests;
+			productReference = 9A9B806D13D2E33700A0EB37 /* CodeFlowTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A9B803D13D2E33700A0EB37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Cory Kilger";
+			};
+			buildConfigurationList = 9A9B804013D2E33700A0EB37 /* Build configuration list for PBXProject "CodeFlow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A9B803B13D2E33700A0EB37;
+			productRefGroup = 9A9B804713D2E33700A0EB37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A9B804513D2E33700A0EB37 /* CodeFlow */,
+				9A9B806C13D2E33700A0EB37 /* CodeFlowTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9A9B804413D2E33700A0EB37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B805513D2E33700A0EB37 /* InfoPlist.strings in Resources */,
+				9A9B805E13D2E33700A0EB37 /* MainWindow.xib in Resources */,
+				9A9B806413D2E33700A0EB37 /* DetailView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B806A13D2E33700A0EB37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B807813D2E33700A0EB37 /* InfoPlist.strings in Resources */,
+				9A9B807B13D2E33800A0EB37 /* CodeFlowTests.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9A9B806B13D2E33700A0EB37 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A9B804213D2E33700A0EB37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B805813D2E33700A0EB37 /* main.m in Sources */,
+				9A9B805B13D2E33700A0EB37 /* CodeFlowAppDelegate.m in Sources */,
+				9A9B806113D2E33700A0EB37 /* DetailViewController.m in Sources */,
+				9A9B806713D2E33700A0EB37 /* RootViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9A9B806813D2E33700A0EB37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B807D13D2E33800A0EB37 /* CodeFlowTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9A9B807213D2E33700A0EB37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9A9B804513D2E33700A0EB37 /* CodeFlow */;
+			targetProxy = 9A9B807113D2E33700A0EB37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9A9B805313D2E33700A0EB37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9B805413D2E33700A0EB37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		9A9B805C13D2E33700A0EB37 /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9B805D13D2E33700A0EB37 /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		9A9B806213D2E33700A0EB37 /* DetailView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9B806313D2E33700A0EB37 /* en */,
+			);
+			name = DetailView.xib;
+			sourceTree = "<group>";
+		};
+		9A9B807613D2E33700A0EB37 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A9B807713D2E33700A0EB37 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9A9B807E13D2E33800A0EB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		9A9B807F13D2E33800A0EB37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_UNIVERSAL_IPHONE_OS)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Release;
+		};
+		9A9B808113D2E33800A0EB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodeFlow/CodeFlow-Prefix.pch";
+				INFOPLIST_FILE = "CodeFlow/CodeFlow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		9A9B808213D2E33800A0EB37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodeFlow/CodeFlow-Prefix.pch";
+				INFOPLIST_FILE = "CodeFlow/CodeFlow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		9A9B808413D2E33800A0EB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CodeFlow.app/CodeFlow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodeFlowTests/CodeFlowTests-Prefix.pch";
+				INFOPLIST_FILE = "CodeFlowTests/CodeFlowTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		9A9B808513D2E33800A0EB37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/CodeFlow.app/CodeFlow";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CodeFlowTests/CodeFlowTests-Prefix.pch";
+				INFOPLIST_FILE = "CodeFlowTests/CodeFlowTests-Info.plist";
+				OTHER_LDFLAGS = (
+					"-framework",
+					SenTestingKit,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A9B804013D2E33700A0EB37 /* Build configuration list for PBXProject "CodeFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9B807E13D2E33800A0EB37 /* Debug */,
+				9A9B807F13D2E33800A0EB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A9B808013D2E33800A0EB37 /* Build configuration list for PBXNativeTarget "CodeFlow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9B808113D2E33800A0EB37 /* Debug */,
+				9A9B808213D2E33800A0EB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9A9B808313D2E33800A0EB37 /* Build configuration list for PBXNativeTarget "CodeFlowTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9B808413D2E33800A0EB37 /* Debug */,
+				9A9B808513D2E33800A0EB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A9B803D13D2E33700A0EB37 /* Project object */;
+}

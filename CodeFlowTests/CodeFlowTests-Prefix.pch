@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'CodeFlowTests' target in the 'CodeFlowTests' project
+//
+
+#ifdef __OBJC__
+	#import <UIKit/UIKit.h>
+#endif
