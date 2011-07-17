@@ -124,13 +124,13 @@
 {
 	switch (indexPath.row) {
 		case 0:
-			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"adjusthsl.txt" ofType:nil]];
+			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"adjusthsl.pdf" ofType:nil]];
 			break;
 		case 1:
-			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"RGBtoHSL.txt" ofType:nil]];
+			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"RGBtoHSL.pdf" ofType:nil]];
 			break;
 		case 2:
-			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"imageblending.txt" ofType:nil]];
+			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"imageblending.pdf" ofType:nil]];
 			break;
 			
 		default:

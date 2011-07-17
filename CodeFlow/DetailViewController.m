@@ -108,8 +108,8 @@
 	[self.activityIndicator startAnimating];
 	
 	// Cheatery for demo
-//	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]]];
-//	return;
+	[self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL fileURLWithPath:filePath]]];
+	return;
 	
 	NSString * input = [NSString stringWithContentsOfFile:filePath encoding:NSUTF8StringEncoding error:nil];
     WNStatement * statement = [WNStatement statementWithString:input];
