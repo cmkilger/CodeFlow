@@ -1,0 +1,288 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9A9B809F13D2E4DD00A0EB37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B809E13D2E4DD00A0EB37 /* Foundation.framework */; };
+		9A9B80A213D2E4DD00A0EB37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B80A113D2E4DD00A0EB37 /* main.m */; };
+		9A9B80B113D2E4E900A0EB37 /* CGI.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B80AC13D2E4E900A0EB37 /* CGI.m */; };
+		9A9B80B213D2E4E900A0EB37 /* NSData+Base64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B80AE13D2E4E900A0EB37 /* NSData+Base64.m */; };
+		9A9B80B313D2E4E900A0EB37 /* NSData+Gzip.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B80B013D2E4E900A0EB37 /* NSData+Gzip.m */; };
+		9A9B80BC13D2E68A00A0EB37 /* GVGraph.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B80BB13D2E68A00A0EB37 /* GVGraph.m */; };
+		9A9B80C513D2E7DD00A0EB37 /* GVGraphArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B80C213D2E7DC00A0EB37 /* GVGraphArguments.m */; };
+		9A9B80C613D2E7DD00A0EB37 /* GVGraphDefaultAttributes.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B80C413D2E7DC00A0EB37 /* GVGraphDefaultAttributes.m */; };
+		9A9B80C813D2E80300A0EB37 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B80C713D2E80300A0EB37 /* libz.dylib */; };
+		9A9B80CA13D2E86900A0EB37 /* libgraph.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B80C913D2E86900A0EB37 /* libgraph.dylib */; };
+		9A9B80CC13D2E88300A0EB37 /* libgvc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B80CB13D2E88300A0EB37 /* libgvc.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9A9B809813D2E4DD00A0EB37 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		9A9B809A13D2E4DD00A0EB37 /* graphviz-cgi */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "graphviz-cgi"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9A9B809E13D2E4DD00A0EB37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9A9B80A113D2E4DD00A0EB37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9A9B80A413D2E4DD00A0EB37 /* graphviz-cgi-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "graphviz-cgi-Prefix.pch"; sourceTree = "<group>"; };
+		9A9B80A513D2E4DD00A0EB37 /* graphviz_cgi.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = graphviz_cgi.1; sourceTree = "<group>"; };
+		9A9B80AB13D2E4E900A0EB37 /* CGI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGI.h; sourceTree = "<group>"; };
+		9A9B80AC13D2E4E900A0EB37 /* CGI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CGI.m; sourceTree = "<group>"; };
+		9A9B80AD13D2E4E900A0EB37 /* NSData+Base64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Base64.h"; sourceTree = "<group>"; };
+		9A9B80AE13D2E4E900A0EB37 /* NSData+Base64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64.m"; sourceTree = "<group>"; };
+		9A9B80AF13D2E4E900A0EB37 /* NSData+Gzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Gzip.h"; sourceTree = "<group>"; };
+		9A9B80B013D2E4E900A0EB37 /* NSData+Gzip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Gzip.m"; sourceTree = "<group>"; };
+		9A9B80BA13D2E68A00A0EB37 /* GVGraph.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVGraph.h; sourceTree = "<group>"; };
+		9A9B80BB13D2E68A00A0EB37 /* GVGraph.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVGraph.m; sourceTree = "<group>"; };
+		9A9B80C113D2E7DC00A0EB37 /* GVGraphArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVGraphArguments.h; sourceTree = "<group>"; };
+		9A9B80C213D2E7DC00A0EB37 /* GVGraphArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVGraphArguments.m; sourceTree = "<group>"; };
+		9A9B80C313D2E7DC00A0EB37 /* GVGraphDefaultAttributes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GVGraphDefaultAttributes.h; sourceTree = "<group>"; };
+		9A9B80C413D2E7DC00A0EB37 /* GVGraphDefaultAttributes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GVGraphDefaultAttributes.m; sourceTree = "<group>"; };
+		9A9B80C713D2E80300A0EB37 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		9A9B80C913D2E86900A0EB37 /* libgraph.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgraph.dylib; path = /usr/local/lib/libgraph.dylib; sourceTree = "<absolute>"; };
+		9A9B80CB13D2E88300A0EB37 /* libgvc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libgvc.dylib; path = /usr/local/lib/libgvc.dylib; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9A9B809713D2E4DD00A0EB37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B80C813D2E80300A0EB37 /* libz.dylib in Frameworks */,
+				9A9B80CA13D2E86900A0EB37 /* libgraph.dylib in Frameworks */,
+				9A9B80CC13D2E88300A0EB37 /* libgvc.dylib in Frameworks */,
+				9A9B809F13D2E4DD00A0EB37 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9A9B808F13D2E4DD00A0EB37 = {
+			isa = PBXGroup;
+			children = (
+				9A9B80A013D2E4DD00A0EB37 /* graphviz-cgi */,
+				9A9B809D13D2E4DD00A0EB37 /* Frameworks */,
+				9A9B809B13D2E4DD00A0EB37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9A9B809B13D2E4DD00A0EB37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B809A13D2E4DD00A0EB37 /* graphviz-cgi */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9A9B809D13D2E4DD00A0EB37 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B80C713D2E80300A0EB37 /* libz.dylib */,
+				9A9B80CB13D2E88300A0EB37 /* libgvc.dylib */,
+				9A9B80C913D2E86900A0EB37 /* libgraph.dylib */,
+				9A9B809E13D2E4DD00A0EB37 /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9A9B80A013D2E4DD00A0EB37 /* graphviz-cgi */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B80A113D2E4DD00A0EB37 /* main.m */,
+				9A9B80AB13D2E4E900A0EB37 /* CGI.h */,
+				9A9B80AC13D2E4E900A0EB37 /* CGI.m */,
+				9A9B80AD13D2E4E900A0EB37 /* NSData+Base64.h */,
+				9A9B80AE13D2E4E900A0EB37 /* NSData+Base64.m */,
+				9A9B80AF13D2E4E900A0EB37 /* NSData+Gzip.h */,
+				9A9B80B013D2E4E900A0EB37 /* NSData+Gzip.m */,
+				9A9B80BA13D2E68A00A0EB37 /* GVGraph.h */,
+				9A9B80BB13D2E68A00A0EB37 /* GVGraph.m */,
+				9A9B80C113D2E7DC00A0EB37 /* GVGraphArguments.h */,
+				9A9B80C213D2E7DC00A0EB37 /* GVGraphArguments.m */,
+				9A9B80C313D2E7DC00A0EB37 /* GVGraphDefaultAttributes.h */,
+				9A9B80C413D2E7DC00A0EB37 /* GVGraphDefaultAttributes.m */,
+				9A9B80A513D2E4DD00A0EB37 /* graphviz_cgi.1 */,
+				9A9B80A313D2E4DD00A0EB37 /* Supporting Files */,
+			);
+			path = "graphviz-cgi";
+			sourceTree = "<group>";
+		};
+		9A9B80A313D2E4DD00A0EB37 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B80A413D2E4DD00A0EB37 /* graphviz-cgi-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9A9B809913D2E4DD00A0EB37 /* graphviz-cgi */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9A9B80A813D2E4DD00A0EB37 /* Build configuration list for PBXNativeTarget "graphviz-cgi" */;
+			buildPhases = (
+				9A9B809613D2E4DD00A0EB37 /* Sources */,
+				9A9B809713D2E4DD00A0EB37 /* Frameworks */,
+				9A9B809813D2E4DD00A0EB37 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "graphviz-cgi";
+			productName = "graphviz-cgi";
+			productReference = 9A9B809A13D2E4DD00A0EB37 /* graphviz-cgi */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9A9B809113D2E4DD00A0EB37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "Cory Kilger";
+			};
+			buildConfigurationList = 9A9B809413D2E4DD00A0EB37 /* Build configuration list for PBXProject "graphviz-cgi" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 9A9B808F13D2E4DD00A0EB37;
+			productRefGroup = 9A9B809B13D2E4DD00A0EB37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9A9B809913D2E4DD00A0EB37 /* graphviz-cgi */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9A9B809613D2E4DD00A0EB37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9A9B80A213D2E4DD00A0EB37 /* main.m in Sources */,
+				9A9B80B113D2E4E900A0EB37 /* CGI.m in Sources */,
+				9A9B80B213D2E4E900A0EB37 /* NSData+Base64.m in Sources */,
+				9A9B80B313D2E4E900A0EB37 /* NSData+Gzip.m in Sources */,
+				9A9B80BC13D2E68A00A0EB37 /* GVGraph.m in Sources */,
+				9A9B80C513D2E7DD00A0EB37 /* GVGraphArguments.m in Sources */,
+				9A9B80C613D2E7DD00A0EB37 /* GVGraphDefaultAttributes.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		9A9B80A613D2E4DD00A0EB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		9A9B80A713D2E4DD00A0EB37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		9A9B80A913D2E4DD00A0EB37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "graphviz-cgi/graphviz-cgi-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/cmkilger/Downloads/graphviz-2.28.0/lib/common /Users/cmkilger/Downloads/graphviz-2.28.0/lib/cdt /Users/cmkilger/Downloads/graphviz-2.28.0/lib/pathplan /Users/cmkilger/Downloads/graphviz-2.28.0/lib/graph /Users/cmkilger/Downloads/graphviz-2.28.0/lib/gvc";
+			};
+			name = Debug;
+		};
+		9A9B80AA13D2E4DD00A0EB37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+				);
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "graphviz-cgi/graphviz-cgi-Prefix.pch";
+				LIBRARY_SEARCH_PATHS = /usr/local/lib/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "/Users/cmkilger/Downloads/graphviz-2.28.0/lib/common /Users/cmkilger/Downloads/graphviz-2.28.0/lib/cdt /Users/cmkilger/Downloads/graphviz-2.28.0/lib/pathplan /Users/cmkilger/Downloads/graphviz-2.28.0/lib/graph /Users/cmkilger/Downloads/graphviz-2.28.0/lib/gvc";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9A9B809413D2E4DD00A0EB37 /* Build configuration list for PBXProject "graphviz-cgi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9B80A613D2E4DD00A0EB37 /* Debug */,
+				9A9B80A713D2E4DD00A0EB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9A9B80A813D2E4DD00A0EB37 /* Build configuration list for PBXNativeTarget "graphviz-cgi" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9A9B80A913D2E4DD00A0EB37 /* Debug */,
+				9A9B80AA13D2E4DD00A0EB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9A9B809113D2E4DD00A0EB37 /* Project object */;
+}
