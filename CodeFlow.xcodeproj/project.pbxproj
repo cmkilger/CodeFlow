@@ -25,16 +25,16 @@
 		9A160EC913D38233001803DE /* WNBreak.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160EBE13D38233001803DE /* WNBreak.m */; };
 		9A160ECC13D38313001803DE /* RegexKitLite.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A160ECB13D38313001803DE /* RegexKitLite.m */; };
 		9A160ECE13D3837C001803DE /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A160ECD13D3837C001803DE /* libicucore.dylib */; };
+		9A19CDB913D3BAE200F76A6C /* FLFlowchartViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A19CDB713D3BAE200F76A6C /* FLFlowchartViewController.xib */; };
 		9A9B804B13D2E33700A0EB37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804A13D2E33700A0EB37 /* UIKit.framework */; };
 		9A9B804D13D2E33700A0EB37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804C13D2E33700A0EB37 /* Foundation.framework */; };
 		9A9B804F13D2E33700A0EB37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804E13D2E33700A0EB37 /* CoreGraphics.framework */; };
 		9A9B805513D2E33700A0EB37 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B805313D2E33700A0EB37 /* InfoPlist.strings */; };
 		9A9B805813D2E33700A0EB37 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B805713D2E33700A0EB37 /* main.m */; };
-		9A9B805B13D2E33700A0EB37 /* CodeFlowAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B805A13D2E33700A0EB37 /* CodeFlowAppDelegate.m */; };
+		9A9B805B13D2E33700A0EB37 /* FLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B805A13D2E33700A0EB37 /* FLAppDelegate.m */; };
 		9A9B805E13D2E33700A0EB37 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B805C13D2E33700A0EB37 /* MainWindow.xib */; };
-		9A9B806113D2E33700A0EB37 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B806013D2E33700A0EB37 /* DetailViewController.m */; };
-		9A9B806413D2E33700A0EB37 /* DetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9A9B806213D2E33700A0EB37 /* DetailView.xib */; };
-		9A9B806713D2E33700A0EB37 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B806613D2E33700A0EB37 /* RootViewController.m */; };
+		9A9B806113D2E33700A0EB37 /* FLFlowchartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B806013D2E33700A0EB37 /* FLFlowchartViewController.m */; };
+		9A9B806713D2E33700A0EB37 /* FLFileBrowserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A9B806613D2E33700A0EB37 /* FLFileBrowserViewController.m */; };
 		9A9B806E13D2E33700A0EB37 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804A13D2E33700A0EB37 /* UIKit.framework */; };
 		9A9B806F13D2E33700A0EB37 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804C13D2E33700A0EB37 /* Foundation.framework */; };
 		9A9B807013D2E33700A0EB37 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A9B804E13D2E33700A0EB37 /* CoreGraphics.framework */; };
@@ -57,11 +57,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9A160E9413D37EB4001803DE /* folder64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = folder64.png; sourceTree = "<group>"; };
-		9A160E9613D3806C001803DE /* adjusthsl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = adjusthsl.txt; sourceTree = "<group>"; };
-		9A160E9713D3806C001803DE /* RGBtoHSL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = RGBtoHSL.txt; sourceTree = "<group>"; };
-		9A160E9813D3806C001803DE /* imageblending.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = imageblending.txt; sourceTree = "<group>"; };
-		9A160E9C13D38159001803DE /* icn_New_File.m_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icn_New_File.m_512.png; sourceTree = "<group>"; };
+		9A160E9413D37EB4001803DE /* folder64.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = folder64.png; path = CodeFlow/folder64.png; sourceTree = "<group>"; };
+		9A160E9613D3806C001803DE /* adjusthsl.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = adjusthsl.txt; path = CodeFlow/adjusthsl.txt; sourceTree = "<group>"; };
+		9A160E9713D3806C001803DE /* RGBtoHSL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RGBtoHSL.txt; path = CodeFlow/RGBtoHSL.txt; sourceTree = "<group>"; };
+		9A160E9813D3806C001803DE /* imageblending.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = imageblending.txt; path = CodeFlow/imageblending.txt; sourceTree = "<group>"; };
+		9A160E9C13D38159001803DE /* icn_New_File.m_512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icn_New_File.m_512.png; path = CodeFlow/icn_New_File.m_512.png; sourceTree = "<group>"; };
 		9A160EA913D38233001803DE /* WNStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNStatement.h; sourceTree = "<group>"; };
 		9A160EAA13D38233001803DE /* WNStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNStatement.m; sourceTree = "<group>"; };
 		9A160EAB13D38233001803DE /* WNCodeBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNCodeBlock.h; sourceTree = "<group>"; };
@@ -87,6 +87,7 @@
 		9A160ECA13D38313001803DE /* RegexKitLite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegexKitLite.h; sourceTree = "<group>"; };
 		9A160ECB13D38313001803DE /* RegexKitLite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegexKitLite.m; sourceTree = "<group>"; };
 		9A160ECD13D3837C001803DE /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		9A19CDB813D3BAE200F76A6C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FLFlowchartViewController.xib; sourceTree = "<group>"; };
 		9A9B804613D2E33700A0EB37 /* CodeFlow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFlow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9B804A13D2E33700A0EB37 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9A9B804C13D2E33700A0EB37 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -95,14 +96,13 @@
 		9A9B805413D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9A9B805613D2E33700A0EB37 /* CodeFlow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CodeFlow-Prefix.pch"; sourceTree = "<group>"; };
 		9A9B805713D2E33700A0EB37 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9A9B805913D2E33700A0EB37 /* CodeFlowAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CodeFlowAppDelegate.h; sourceTree = "<group>"; };
-		9A9B805A13D2E33700A0EB37 /* CodeFlowAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CodeFlowAppDelegate.m; sourceTree = "<group>"; };
+		9A9B805913D2E33700A0EB37 /* FLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLAppDelegate.h; sourceTree = "<group>"; };
+		9A9B805A13D2E33700A0EB37 /* FLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLAppDelegate.m; sourceTree = "<group>"; };
 		9A9B805D13D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		9A9B805F13D2E33700A0EB37 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		9A9B806013D2E33700A0EB37 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		9A9B806313D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/DetailView.xib; sourceTree = "<group>"; };
-		9A9B806513D2E33700A0EB37 /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		9A9B806613D2E33700A0EB37 /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
+		9A9B805F13D2E33700A0EB37 /* FLFlowchartViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLFlowchartViewController.h; sourceTree = "<group>"; };
+		9A9B806013D2E33700A0EB37 /* FLFlowchartViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLFlowchartViewController.m; sourceTree = "<group>"; };
+		9A9B806513D2E33700A0EB37 /* FLFileBrowserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FLFileBrowserViewController.h; sourceTree = "<group>"; };
+		9A9B806613D2E33700A0EB37 /* FLFileBrowserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FLFileBrowserViewController.m; sourceTree = "<group>"; };
 		9A9B806D13D2E33700A0EB37 /* CodeFlowTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CodeFlowTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A9B807513D2E33700A0EB37 /* CodeFlowTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CodeFlowTests-Info.plist"; sourceTree = "<group>"; };
 		9A9B807713D2E33700A0EB37 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -171,6 +171,52 @@
 			name = "Dumb Parser";
 			sourceTree = "<group>";
 		};
+		9A19CDB313D3B96100F76A6C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B805C13D2E33700A0EB37 /* MainWindow.xib */,
+				9A9B806513D2E33700A0EB37 /* FLFileBrowserViewController.h */,
+				9A9B806613D2E33700A0EB37 /* FLFileBrowserViewController.m */,
+				9A9B805F13D2E33700A0EB37 /* FLFlowchartViewController.h */,
+				9A9B806013D2E33700A0EB37 /* FLFlowchartViewController.m */,
+				9A19CDB713D3BAE200F76A6C /* FLFlowchartViewController.xib */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		9A19CDB413D3B98200F76A6C /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				9A9B808913D2E4BC00A0EB37 /* NSData+Base64.h */,
+				9A9B808A13D2E4BC00A0EB37 /* NSData+Base64.m */,
+				9A9B808B13D2E4BC00A0EB37 /* NSData+Gzip.h */,
+				9A9B808C13D2E4BC00A0EB37 /* NSData+Gzip.m */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		9A19CDB513D3B9A300F76A6C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9A160E9413D37EB4001803DE /* folder64.png */,
+				9A160E9613D3806C001803DE /* adjusthsl.txt */,
+				9A160E9713D3806C001803DE /* RGBtoHSL.txt */,
+				9A160E9813D3806C001803DE /* imageblending.txt */,
+				9A160E9C13D38159001803DE /* icn_New_File.m_512.png */,
+			);
+			name = Resources;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		9A19CDB613D3B9BA00F76A6C /* RegexKitLite */ = {
+			isa = PBXGroup;
+			children = (
+				9A160ECA13D38313001803DE /* RegexKitLite.h */,
+				9A160ECB13D38313001803DE /* RegexKitLite.m */,
+			);
+			name = RegexKitLite;
+			sourceTree = "<group>";
+		};
 		9A9B803B13D2E33700A0EB37 = {
 			isa = PBXGroup;
 			children = (
@@ -205,27 +251,14 @@
 		9A9B805013D2E33700A0EB37 /* CodeFlow */ = {
 			isa = PBXGroup;
 			children = (
-				9A9B805913D2E33700A0EB37 /* CodeFlowAppDelegate.h */,
-				9A9B805A13D2E33700A0EB37 /* CodeFlowAppDelegate.m */,
-				9A9B805C13D2E33700A0EB37 /* MainWindow.xib */,
-				9A9B805F13D2E33700A0EB37 /* DetailViewController.h */,
-				9A9B806013D2E33700A0EB37 /* DetailViewController.m */,
-				9A9B806213D2E33700A0EB37 /* DetailView.xib */,
-				9A9B806513D2E33700A0EB37 /* RootViewController.h */,
-				9A9B806613D2E33700A0EB37 /* RootViewController.m */,
-				9A9B808913D2E4BC00A0EB37 /* NSData+Base64.h */,
-				9A9B808A13D2E4BC00A0EB37 /* NSData+Base64.m */,
-				9A9B808B13D2E4BC00A0EB37 /* NSData+Gzip.h */,
-				9A9B808C13D2E4BC00A0EB37 /* NSData+Gzip.m */,
-				9A9B805113D2E33700A0EB37 /* Supporting Files */,
+				9A9B805913D2E33700A0EB37 /* FLAppDelegate.h */,
+				9A9B805A13D2E33700A0EB37 /* FLAppDelegate.m */,
+				9A19CDB313D3B96100F76A6C /* Views */,
+				9A19CDB413D3B98200F76A6C /* Categories */,
 				9A160EA813D38217001803DE /* Dumb Parser */,
-				9A160E9413D37EB4001803DE /* folder64.png */,
-				9A160E9613D3806C001803DE /* adjusthsl.txt */,
-				9A160E9713D3806C001803DE /* RGBtoHSL.txt */,
-				9A160E9813D3806C001803DE /* imageblending.txt */,
-				9A160E9C13D38159001803DE /* icn_New_File.m_512.png */,
-				9A160ECA13D38313001803DE /* RegexKitLite.h */,
-				9A160ECB13D38313001803DE /* RegexKitLite.m */,
+				9A19CDB613D3B9BA00F76A6C /* RegexKitLite */,
+				9A19CDB513D3B9A300F76A6C /* Resources */,
+				9A9B805113D2E33700A0EB37 /* Supporting Files */,
 			);
 			path = CodeFlow;
 			sourceTree = "<group>";
@@ -333,12 +366,12 @@
 			files = (
 				9A9B805513D2E33700A0EB37 /* InfoPlist.strings in Resources */,
 				9A9B805E13D2E33700A0EB37 /* MainWindow.xib in Resources */,
-				9A9B806413D2E33700A0EB37 /* DetailView.xib in Resources */,
 				9A160E9513D37EB4001803DE /* folder64.png in Resources */,
 				9A160E9913D3806C001803DE /* adjusthsl.txt in Resources */,
 				9A160E9A13D3806C001803DE /* RGBtoHSL.txt in Resources */,
 				9A160E9B13D3806C001803DE /* imageblending.txt in Resources */,
 				9A160E9D13D38159001803DE /* icn_New_File.m_512.png in Resources */,
+				9A19CDB913D3BAE200F76A6C /* FLFlowchartViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -375,9 +408,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9A9B805813D2E33700A0EB37 /* main.m in Sources */,
-				9A9B805B13D2E33700A0EB37 /* CodeFlowAppDelegate.m in Sources */,
-				9A9B806113D2E33700A0EB37 /* DetailViewController.m in Sources */,
-				9A9B806713D2E33700A0EB37 /* RootViewController.m in Sources */,
+				9A9B805B13D2E33700A0EB37 /* FLAppDelegate.m in Sources */,
+				9A9B806113D2E33700A0EB37 /* FLFlowchartViewController.m in Sources */,
+				9A9B806713D2E33700A0EB37 /* FLFileBrowserViewController.m in Sources */,
 				9A9B808D13D2E4BC00A0EB37 /* NSData+Base64.m in Sources */,
 				9A9B808E13D2E4BC00A0EB37 /* NSData+Gzip.m in Sources */,
 				9A160EBF13D38233001803DE /* WNStatement.m in Sources */,
@@ -414,6 +447,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		9A19CDB713D3BAE200F76A6C /* FLFlowchartViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9A19CDB813D3BAE200F76A6C /* en */,
+			);
+			name = FLFlowchartViewController.xib;
+			sourceTree = "<group>";
+		};
 		9A9B805313D2E33700A0EB37 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -428,14 +469,6 @@
 				9A9B805D13D2E33700A0EB37 /* en */,
 			);
 			name = MainWindow.xib;
-			sourceTree = "<group>";
-		};
-		9A9B806213D2E33700A0EB37 /* DetailView.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9A9B806313D2E33700A0EB37 /* en */,
-			);
-			name = DetailView.xib;
 			sourceTree = "<group>";
 		};
 		9A9B807613D2E33700A0EB37 /* InfoPlist.strings */ = {

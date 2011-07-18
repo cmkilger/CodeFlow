@@ -1,17 +1,17 @@
 //
-//  RootViewController.m
+//  FLFileBrowserViewController.m
 //  CodeFlow
 //
 //  Created by Cory Kilger on 7/17/11.
 //  Copyright 2011 Cory Kilger. All rights reserved.
 //
 
-#import "RootViewController.h"
-#import "DetailViewController.h"
+#import "FLFileBrowserViewController.h"
+#import "FLFlowchartViewController.h"
 
-@implementation RootViewController
+@implementation FLFileBrowserViewController
 		
-@synthesize detailViewController, folder;
+@synthesize flowchartViewController, folder;
 
 - (void)viewDidLoad {
 	[super viewDidLoad];
@@ -47,15 +47,12 @@
 		case 0:
 			cell.textLabel.text = @"AdjustHSL.m";
 			break;
-			
 		case 1:
 			cell.textLabel.text = @"ImageBlending.m";
 			break;
-			
 		case 2:
 			cell.textLabel.text = @"RGBtoHSL.m";
 			break;
-			
 		default:
 			break;
 	}
@@ -66,36 +63,21 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
 	switch (indexPath.row) {
 		case 0:
-			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"adjusthsl.txt" ofType:nil]];
+			[flowchartViewController setFile:[[NSBundle mainBundle] pathForResource:@"adjusthsl.txt" ofType:nil]];
 			break;
 		case 1:
-			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"RGBtoHSL.txt" ofType:nil]];
+			[flowchartViewController setFile:[[NSBundle mainBundle] pathForResource:@"RGBtoHSL.txt" ofType:nil]];
 			break;
 		case 2:
-			[detailViewController setFile:[[NSBundle mainBundle] pathForResource:@"imageblending.txt" ofType:nil]];
+			[flowchartViewController setFile:[[NSBundle mainBundle] pathForResource:@"imageblending.txt" ofType:nil]];
 			break;
-			
 		default:
 			break;
 	}
 }
 
-- (void)didReceiveMemoryWarning
-{
-    // Releases the view if it doesn't have a superview.
-    [super didReceiveMemoryWarning];
-
-    // Relinquish ownership any cached data, images, etc that aren't in use.
-}
-
-- (void)viewDidUnload
-{
-    // Relinquish ownership of anything that can be recreated in viewDidLoad or on demand.
-    // For example: self.myOutlet = nil;
-}
-
 - (void)dealloc {
-	[detailViewController release];
+	[flowchartViewController release];
     [super dealloc];
 }
 

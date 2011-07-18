@@ -1,29 +1,29 @@
 //
-//  DetailViewController.m
+//  FLFlowchartViewController.m
 //  CodeFlow
 //
 //  Created by Cory Kilger on 7/17/11.
 //  Copyright 2011 Cory Kilger. All rights reserved.
 //
 
-#import "DetailViewController.h"
-#import "RootViewController.h"
+#import "FLFlowchartViewController.h"
+#import "FLFileBrowserViewController.h"
 #import "NSData+Gzip.h"
 #import "NSData+Base64.h"
 #import "WNStatement.h"
 
 
-@interface DetailViewController ()
+@interface FLFlowchartViewController ()
 
 @property (nonatomic, retain) UIPopoverController *popoverController;
+@property (nonatomic, retain) NSMutableData * data;
 
 @end
 
 
-@implementation DetailViewController
+@implementation FLFlowchartViewController
 
 @synthesize toolbar;
-@synthesize detailItem;
 @synthesize detailDescriptionLabel;
 @synthesize popoverController;
 @synthesize webView;
@@ -45,7 +45,6 @@
     self.popoverController = pc;
 }
 
-// Called when the view is shown again in the split view, invalidating the button and popover controller.
 - (void)splitViewController:(UISplitViewController *)svc willShowViewController:(UIViewController *)aViewController invalidatingBarButtonItem:(UIBarButtonItem *)barButtonItem {
     NSMutableArray *items = [[self.toolbar items] mutableCopy];
     [items removeObjectAtIndex:0];
@@ -138,8 +137,10 @@
 - (void)dealloc {
 	[popoverController release];
 	[toolbar release];
-	[detailItem release];
 	[detailDescriptionLabel release];
+	[webView release];
+	[activityIndicator release];
+	[data release];
     [super dealloc];
 }
 

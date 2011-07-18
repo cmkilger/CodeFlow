@@ -6,11 +6,11 @@
 //  Copyright 2011 Cory Kilger. All rights reserved.
 //
 
-#import "CodeFlowAppDelegate.h"
+#import "FLAppDelegate.h"
 
-#import "RootViewController.h"
+#import "FLFileBrowserViewController.h"
 
-@implementation CodeFlowAppDelegate
+@implementation FLAppDelegate
 
 @synthesize window=_window;
 @synthesize splitViewController=_splitViewController;

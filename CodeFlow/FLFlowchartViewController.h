@@ -1,5 +1,5 @@
 //
-//  DetailViewController.h
+//  FLFlowchartViewController.h
 //  CodeFlow
 //
 //  Created by Cory Kilger on 7/17/11.
@@ -8,19 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DetailViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate, UIWebViewDelegate> {
-
-	UILabel *_chooseLabel;
-}
-
+@interface FLFlowchartViewController : UIViewController <UIPopoverControllerDelegate, UISplitViewControllerDelegate, UIWebViewDelegate>
 
 @property (nonatomic, retain) IBOutlet UIToolbar *toolbar;
-@property (nonatomic, retain) id detailItem;
 @property (nonatomic, retain) IBOutlet UILabel *detailDescriptionLabel;
-
 @property (nonatomic, retain) IBOutlet UIWebView * webView;
 @property (nonatomic, retain) IBOutlet UIActivityIndicatorView * activityIndicator;
-@property (nonatomic, retain) NSMutableData * data;
 
 - (void)setFile:(NSString *)filePath;
 

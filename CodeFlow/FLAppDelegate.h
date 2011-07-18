@@ -8,14 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@class RootViewController;
-@class DetailViewController;
+@class FLFileBrowserViewController;
+@class FLFlowchartViewController;
 
-@interface CodeFlowAppDelegate : NSObject <UIApplicationDelegate>
+@interface FLAppDelegate : NSObject <UIApplicationDelegate>
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet UISplitViewController *splitViewController;
-@property (nonatomic, retain) IBOutlet RootViewController *rootViewController;
-@property (nonatomic, retain) IBOutlet DetailViewController *detailViewController;
+@property (nonatomic, retain) IBOutlet FLFileBrowserViewController *rootViewController;
+@property (nonatomic, retain) IBOutlet FLFlowchartViewController *detailViewController;
 
 @end
