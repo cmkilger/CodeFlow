@@ -12,13 +12,9 @@
 
 @implementation CodeFlowAppDelegate
 
-
 @synthesize window=_window;
-
 @synthesize splitViewController=_splitViewController;
-
 @synthesize rootViewController=_rootViewController;
-
 @synthesize detailViewController=_detailViewController;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
